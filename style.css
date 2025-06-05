@@ -52,7 +52,7 @@ body {
 /* Seções */
 section {
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
@@ -65,19 +65,28 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Estilo para as imagens */
+/* Alinhamento das imagens à direita do texto */
 section div {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+}
+
+section div .texto {
+    width: 50%; /* O texto ocupa metade da largura */
+    padding-right: 20px; /* Um espaçamento à direita do texto */
+}
+
+section div .imagem {
+    width: 40%; /* A imagem ocupa 40% da largura */
+    text-align: center; /* Alinha a imagem ao centro dentro da sua área */
 }
 
 .pratos img,
 .quirera img,
 .pinhao img {
-    width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -121,28 +130,21 @@ section div {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .cabecalho-titulo {
-        font-size: 1.8rem;
-    }
-
-    .cabecalho nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cabecalho-lista li {
-        margin: 10px 0;
-    }
-
     section div {
-        flex-direction: column;
+        flex-direction: column; /* No mobile, empilha o texto e imagem */
+        text-align: center;
+    }
+
+    section div .texto,
+    section div .imagem {
+        width: 100%; /* Texto e imagem ocupam 100% da largura */
+        padding-right: 0;
     }
 
     .pratos img,
     .quirera img,
     .pinhao img {
-        width: 90%;
-        margin-bottom: 20px;
+        width: 80%; /* Ajusta o tamanho da imagem no mobile */
     }
 
     .imagem-credito {
