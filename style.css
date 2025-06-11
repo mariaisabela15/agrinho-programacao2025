@@ -88,21 +88,24 @@ body {
   text-align: center;
 }
 #rodape {
-   background-color: #90c840;
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-    font-weight: bold;
-     display: block;
+  width: 100vw; /* Garante que ocupe toda a largura da tela */
+  background-color: #a3d9a5; /* cor pedida */
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  left: 0;
 }
-
 
 .rodape-conteudo {
   max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap; /* Para se adaptar melhor em telas menores */
 }
 
 .github-icon {
