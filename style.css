@@ -41,13 +41,12 @@ main {
     color: #fff;
 }
 
-.pratos h2,
-.cidades h2 {
-    text-align: center;
-    color: #000;
-}
-
 .item {
+    text-align: center;          /* Centraliza os textos */
+    background-color: #ffffff33; /* Fundo branco com transparência leve */
+    padding: 20px;
+    border-radius: 12px;         /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
     margin-bottom: 30px;
 }
 
@@ -61,10 +60,12 @@ main {
 }
 
 .item img {
-    width: 50px;
     display: block;
-    margin-top: 10px;
+    margin: 0 auto;              /* Centraliza a imagem */
+    width: 150px;                /* Ajuste o tamanho conforme preferir */
+    border-radius: 10px;         /* Bordas arredondadas na imagem */
 }
+
 
 small {
     font-size: 0.8em;
