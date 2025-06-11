@@ -88,12 +88,11 @@ body {
   text-align: center;
 }
 #rodape {
-   background-color: #a3d9a5; /* verde delicado */
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
+   background-color: #90c840;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
 }
 
 
@@ -103,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  gap: 10px;
 }
 
 .github-icon {
