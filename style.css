@@ -90,9 +90,9 @@ body {
 #rodape {
   background-color: #a3d9a5; /* mesma cor verde do cabeçalho */
   color: white;
-  padding: 15px 0;
+  padding: 150px 0;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   width: 100%;
   box-sizing: border-box;
   position: relative;
