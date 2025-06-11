@@ -88,15 +88,12 @@ body {
   text-align: center;
 }
 #rodape {
-  background-color: #a3d9a5; /* mesma cor verde do cabeçalho */
-  color: white;
-  padding: 15px 0;
+   background-color: #a3d9a5; /* verde delicado */
   text-align: center;
-  font-size: 0.9rem;
+  padding: 20px 0;
   width: 100%;
   box-sizing: border-box;
-  position: relative;
-  bottom: 0;
+  margin-bottom: 10px;
 }
 
 
