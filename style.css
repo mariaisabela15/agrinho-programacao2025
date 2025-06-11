@@ -4,33 +4,36 @@ body {
     background-color: #d0eb9d;
     color: #000;
 }
-
 header {
     background-color: #90c840;
-    text-align: center;
     padding: 20px;
     position: relative;
+    text-align: center;
 }
 
 header h1 {
     color: #fff;
-    font-size: 32px; /* Reduzido para melhor visualização */
+    font-size: 32px;
     margin: 0;
 }
 
-.icons {
+.cabecalho-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     position: absolute;
     top: 20px;
     right: 20px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
-.icons img {
-    width: 24px; /* Tamanho mais adequado para ícones */
-    height: 24px;
+.cabecalho-lista li img {
+    width: 28px;
+    height: 28px;
     cursor: pointer;
 }
+
 
 main {
     background-color: #00b050;
