@@ -93,12 +93,12 @@ body {
     padding: 10px;
     color: #fff;
     font-weight: bold;
+     display: block;
 }
 
 
 .rodape-conteudo {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
