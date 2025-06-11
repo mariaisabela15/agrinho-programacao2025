@@ -13,11 +13,15 @@ body {
   padding: 20px;
 }
 
-/* Cabeçalho */
 .cabecalho {
+  background-color: #a3d9a5; /* verde delicado */
   text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 30px;
 }
+
 
 .cabecalho-titulo {
   font-size: 2rem;
@@ -83,24 +87,29 @@ body {
   margin: 0 auto 40px auto;
   text-align: center;
 }
-
-/* Rodapé */
 #rodape {
-  background-color: #222;
+  background-color: #a3d9a5; /* mesma cor verde do cabeçalho */
   color: white;
-  padding: 15px 10px;
+  padding: 15px 0;
   text-align: center;
   font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
 }
 
-.rodape-conteudo a {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle;
+
+.rodape-conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .github-icon {
   width: 24px;
   height: 24px;
-  vertical-align: middle;
 }
