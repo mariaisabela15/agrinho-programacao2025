@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #fafafa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cabecalho-titulo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cabecalho-lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cabecalho-lista li img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Seções dos pratos */
+.pratos > div, 
+#barreado, 
+#quirera\ com\ carne\ de\ porco, 
+#pinhao {
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo texto dos pratos */
+.barreado-texto,
+.quirera-texto,
+.pinhao-texto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilizando as imagens dos pratos - tamanho fixo e centralizadas */
+.barreado-imagem img,
+.quirera-imagem img,
+.pinhao-imagem img {
+  display: block;
+  width: 100%;        /* Preenche o container */
+  max-width: 400px;   /* Limita tamanho máximo */
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Créditos das imagens */
+.imagem-credito {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Seção localização */
+.localizacao > div {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+/* Rodapé */
+#rodape {
+  background-color: #222;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.rodape-conteudo a {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
