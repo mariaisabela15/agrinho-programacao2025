@@ -4,6 +4,7 @@ body {
     background-color: #d0eb9d;
     color: #000;
 }
+
 header {
     background-color: #90c840;
     padding: 20px;
@@ -34,62 +35,106 @@ header h1 {
     cursor: pointer;
 }
 
-
-main {
-    background-color: #00b050;
-    padding: 30px 20px;
-    color: #fff;
+/* Seções dos pratos */
+#pratos {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.item {
+#pratos h2 {
     text-align: center;
-    background-color: #ffffffcc; /* fundo branco com opacidade */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    max-width: 400px;  /* opcional, para limitar largura */
-    margin-left: auto; /* centralizar o bloco */
-    margin-right: auto;
-}
-
-.item h3 {
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
-.item p {
-    margin-bottom: 10px;
+/* Container que envolve texto + imagem de cada prato */
+#pratos > div {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
 }
 
-.item img {
+/* Texto das seções (ex: barreado-texto, quirera-texto, pinhao-texto) */
+#pratos > div > div[class$="-texto"] {
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+
+#pratos > div > div[class$="-texto"] h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+#pratos > div > div[class$="-texto"] p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Imagens das seções */
+#pratos > div > div[class$="-imagem"] {
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+
+#pratos > div > div[class$="-imagem"] img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
     display: block;
     margin: 0 auto;
-    width: 150px;
-    border-radius: 10px;
 }
 
-small {
+/* Créditos da imagem */
+.imagem-credito {
     font-size: 0.8em;
-    color: #ccc;
-}
-
-.cidades p {
-    margin: 10px 0;
-    color: #fff;
-     text-align: center;
-}
-
-.fonte {
-    font-size: 0.9em;
-    text-align: right;
-    color: #ddd;
-}
-
-.destaque {
-    font-weight: bold;
+    color: #555;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 6px;
+}
+
+/* Localização */
+.localizacao {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.localizacao h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* Textos das localizações */
+.localizacao > section > div {
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.localizacao > section > div h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.localizacao > section > div p {
+    font-size: 16px;
+    color: #000;
 }
 
 footer {
