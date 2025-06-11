@@ -1,114 +1,96 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  background: #fafafa;
-  color: #333;
-  padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d0eb9d;
+    color: #000;
 }
 
-.cabecalho {
-  background-color: #a3d9a5; /* verde delicado */
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
+header {
+    background-color: #90c840;
+    text-align: center;
+    padding: 20px;
+    position: relative;
 }
 
-
-.cabecalho-titulo {
-  font-size: 2rem;
-  margin-bottom: 10px;
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
 }
 
-.cabecalho-lista {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
-.cabecalho-lista li img {
-  width: 40px;
-  height: 40px;
+.icons img {
+    width: 30px;
+    margin-left: 10px;
 }
 
-/* Seções dos pratos */
-.pratos > div, 
-#barreado, 
-#quirera\ com\ carne\ de\ porco, 
-#pinhao {
-  margin-bottom: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+main {
+    background-color: #00b050;
+    padding: 30px 20px;
+    color: #fff;
 }
 
-/* Estilo texto dos pratos */
-.barreado-texto,
-.quirera-texto,
-.pinhao-texto {
-  text-align: center;
-  margin-bottom: 20px;
+.pratos h2,
+.cidades h2 {
+    text-align: center;
+    color: #000;
 }
 
-/* Estilizando as imagens dos pratos - tamanho fixo e centralizadas */
-.barreado-imagem img,
-.quirera-imagem img,
-.pinhao-imagem img {
-  display: block;
-  width: 100%;        /* Preenche o container */
-  max-width: 400px;   /* Limita tamanho máximo */
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+.item {
+    margin-bottom: 30px;
 }
 
-/* Créditos das imagens */
-.imagem-credito {
-  font-size: 0.75rem;
-  text-align: center;
-  color: #666;
-  margin-top: 5px;
+.item h3 {
+    color: #000;
+    margin-bottom: 5px;
 }
 
-/* Seção localização */
-.localizacao > div {
-  max-width: 600px;
-  margin: 0 auto 40px auto;
-  text-align: center;
-}
-#rodape {
-  width: 100vw; /* Garante que ocupe toda a largura da tela */
-  background-color: #a3d9a5; /* cor pedida */
-  text-align: center;
-  padding: 20px 0;
-  color: #333;
-  font-weight: bold;
-  position: relative;
-  left: 0;
+.item p {
+    margin-bottom: 5px;
 }
 
-.rodape-conteudo {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap; /* Para se adaptar melhor em telas menores */
+.item img {
+    width: 200px;
+    display: block;
+    margin-top: 10px;
 }
 
-.github-icon {
-  width: 24px;
-  height: 24px;
+small {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.cidades p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.fonte {
+    font-size: 0.9em;
+    text-align: right;
+    color: #ddd;
+}
+
+.destaque {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #90c840;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer img {
+    width: 30px;
+    margin-top: 10px;
 }
