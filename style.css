@@ -87,16 +87,9 @@ body {
   margin: 0 auto 40px auto;
   text-align: center;
 }
-#rodape {
-   background-color: #90c840;
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-    font-weight: bold;
-}
 
 
-.rodape-conteudo {
+.rodape {
   background-color: rgb(0, 37, 50);
     color: white;
     text-align: center;
