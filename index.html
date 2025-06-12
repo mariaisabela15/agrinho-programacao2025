@@ -2,108 +2,96 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pratos típicos do Campo que conectam-se com a Cidade</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho-titulo">Pratos típicos do Campo que conectam-se com a Cidade</h1>
         <nav>
-
             <ul class="cabecalho-lista">
-                <li><a href="#pratos"><img src="imagem/prato.png" alt="Imagem de um prato"></a></li>
-                <li><a href="#localizacao"><img src="imagem/localização.png" alt="Imagem de localização"></a></li>
+                <li><a href="#pratos"><img src="imagem/prato.png" alt="Imagem de um prato" /></a></li>
+                <li><a href="#localizacao"><img src="imagem/localização.png" alt="Imagem de localização" /></a></li>
             </ul>
         </nav>
     </header>
 
     <section id="pratos" class="pratos">
-        <div class="pratos">
-            <h2>Conheça os pratos típicos</h2>
 
-            <section id="barreado">
-                <div class="barreado-texto">
-                    <h1>Barreado</h1>
-                    <p>Prato típico do campo, no qual levava várias horas de cozimento no fogão a lenha. Até hoje o
-                        prato é preparado em uma panela de barro com carne bovina e especiarias, tudo bem vedado para
-                        garantir o sabor.</p>
-                </div>
-                <div class="barreado-imagem">
-                    <img src="imagem/Barreado.jpg" alt="Imagem do Barreado">
-                    <div class="imagem-credito">Fonte:Wikimedia Commons. Panela de barreado e acompanhamentos </div>
-                </div>
+        <!-- Barreado -->
+        <div class="prato-item" id="barreado">
+            <div class="texto">
+                <h1>Barreado</h1>
+                <p>
+                    Prato típico do campo, no qual levava várias horas de cozimento no fogão a lenha. Até hoje o prato é preparado em uma panela de barro com carne bovina e especiarias, tudo bem vedado para garantir o sabor.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="imagem/Barreado.jpg" alt="Imagem do Barreado" />
+                <div class="imagem-credito">Fonte: Wikimedia Commons. Panela de barreado e acompanhamentos</div>
+            </div>
+        </div>
+
+        <!-- Quirera com carne de porco -->
+        <div class="prato-item" id="quirera">
+            <div class="texto">
+                <h1>Quirera com carne de porco</h1>
+                <p>
+                    Preparada no interior com milhos selecionados e moídos na hora, a quirera era cozida juntamente com carnes suínas, tais como: costelinha e lombo, dentre outros pedaços.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="imagem/quirera.jpg" alt="Imagem da quirera" />
+                <div class="imagem-credito">Fonte: Wikimedia Commons. Milho sendo preparado.</div>
+            </div>
+        </div>
+
+        <!-- Pinhão -->
+        <div class="prato-item" id="pinhao">
+            <div class="texto">
+                <h1>Pinhão</h1>
+                <p>
+                    Semente proveniente da Araucária, é amplamente conhecida em todo o Estado do Paraná. Desde tempos mais remotos, povos da zona rural o consumiam de diferentes formas, seja cozido ou assado. E até hoje é muito apreciado em estações mais frias e está presente em diversas receitas, como em bolos e tortas.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="imagem/Pinhão.jpg" alt="Imagem do Pinhão" />
+                <div class="imagem-credito">Fonte: Wikimedia Commons. Pinhão assado com grimpas</div>
+            </div>
         </div>
 
     </section>
-
-    <section id="quirera com carne de porco">
-        <div class="quirera-texto">
-            <h1>Quirera com carne de porco</h1>
-            <p>Preparada no interior com milhos selecionados e moídos na hora, a quirera era cozida juntamente com
-                carnes suínas, tais como: costelinha e lombo, dentre outros pedaços.</p>
-        </div>
-        <div class="quirera-imagem">
-            <img src="imagem/milho1.jpg" alt="Imagem da quirera">
-            <div class="imagem-credito">Fonte: Wikimedia Commons. Milho sendo preparado. </div>
-
-        </div>
-    </section>
-
-    <section id="pinhao">
-        <div class="pinhao-texto">
-            <h1>Pinhão</h1>
-            <p>Semente proveniente da Araucária, é amplamente conhecida em todo o Estado do Paraná. Desde tempos mais
-                remotos, povos da zona rural o consumiam de diferentes formas, seja cozido ou assado. E até hoje é muito
-                apreciado em estações mais frias e está presente em diversas receitas, como em bolos e tortas.</p>
-        </div>
-        <div class="pinhao-imagem">
-            <img src="imagem/Pinhão.jpg" alt="Imagem da quirera">
-            <div class="imagem-credito">Fonte: Wikimedia Commons. Pinhão assado com grimpas </div>
-
-
-        </div>
-    </section>
-
 
     <section id="localizacao" class="localizacao">
-        <div class="localizacao">
-            <h2>Onde são encontrados</h2>
-            <section id="barreado">
-                <div class="barreado-texto">
-                    <h1>Barreado</h1>
-                    <p>É localizado no litoral do Paraná, como nas cidades de Morretes, Antonina e Paranaguá.</p>
-                </div>
-            </section>
+        <h2>Onde são encontrados</h2>
 
-            <section id="quirera com carne de porco">
-                <div class="quirera-texto">
-                    <h1>Quirera com carne de porco</h1>
-                    <p>Localizado na região centro-sul e interior do Paraná (áreas rurais de cidades como Guarapuava,
-                        Irati e Ponta Grossa).</p>
-                </div>
-            </section>
+        <div class="localizacao-item" id="barreado-localizacao">
+            <h1>Barreado</h1>
+            <p>É localizado no litoral do Paraná, como nas cidades de Morretes, Antonina e Paranaguá.</p>
+        </div>
 
-            <section id="pinhao">
-                <div class="pinhao-texto">
-                    <h1>Pinhão</h1>
-                    <p> Encontra-se em regiões mais frias e com presença de Araucárias, como Campos Gerais, Região
-                        Centro-Sul, União da Vitória, São Mateus do Sul e Curitiba.</p>
+        <div class="localizacao-item" id="quirera-localizacao">
+            <h1>Quirera com carne de porco</h1>
+            <p>Localizado na região centro-sul e interior do Paraná (áreas rurais de cidades como Guarapuava, Irati e Ponta Grossa).</p>
+        </div>
 
+        <div class="localizacao-item" id="pinhao-localizacao">
+            <h1>Pinhão</h1>
+            <p>Encontra-se em regiões mais frias e com presença de Araucárias, como Campos Gerais, Região Centro-Sul, União da Vitória, São Mateus do Sul e Curitiba.</p>
+        </div>
+    </section>
 
-                </div>
-            </section>
-            <footer id="rodape">
-                <div class="rodape-conteudo">
-                    <p>Desenvolvido por Maria Isabela</p>
-                   <a href="https://github.dev/mariaisabela15/agrinho-programacao2025" target="_blank">
-                <img src="imagem/github2.png" alt="GitHub" class="github-icon">
+    <footer id="rodape">
+        <div class="rodape-conteudo">
+            <p>Desenvolvido por Maria Isabela</p>
+            <a href="https://github.dev/mariaisabela15/agrinho-programacao2025" target="_blank">
+                <img src="imagem/github2.png" alt="GitHub" class="github-icon" />
             </a>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
