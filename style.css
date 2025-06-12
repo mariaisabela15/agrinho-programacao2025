@@ -160,9 +160,11 @@ footer#rodape {
     }
 
     footer#rodape {
-        flex-direction: column;
-        text-align: center;
-    }
+  
+    text-align: center;
+    display: block; 
+    padding: 15px 10px;
+}
 
     .rodape-conteudo {
         display: flex;
