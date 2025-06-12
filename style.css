@@ -142,9 +142,10 @@ footer#rodape {
 }
 
 .rodape-conteudo a img.github-icon {
+
     width: 30px;
     height: 30px;
-    vertical-align: middle;
+    vertical-align: center;
 }
 
 /* Responsividade para telas pequenas */
