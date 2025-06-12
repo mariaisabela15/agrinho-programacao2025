@@ -159,24 +159,16 @@ footer#rodape {
         min-width: 100%;
     }
 
-    footer#rodape {
-    background-color: #90c840;
+footer {
+    text-align: center;
+    padding: 10px;
     color: #fff;
     font-weight: bold;
-    padding: 15px 30px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;          /* Alinha texto centralizado */
-    display: flex;
-    align-items: center;
-    justify-content: center;     /* Centraliza horizontalmente */
-    gap: 10px;
+    background-color: #90c840;
 }
 
-    .rodape-conteudo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
+footer img.github-icon {
+    width: 30px;
+    margin-top: 10px;
+}
 }
