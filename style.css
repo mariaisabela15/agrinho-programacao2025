@@ -35,11 +35,7 @@ header h1 {
     cursor: pointer;
 }
 
-#pratos {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
+
 
 /* Contêiner geral das seções dos pratos */
 .pratos > div {
