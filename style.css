@@ -134,11 +134,11 @@ header h1 {
     color: #000;
 }
 footer {
-    background-color: #90c840;
     text-align: center;
     padding: 10px;
     color: #fff;
     font-weight: bold;
+    background-color: #90c840;
 }
 
 footer img {
