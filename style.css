@@ -135,10 +135,10 @@ footer#rodape {
     justify-content: space-between;
     gap: 10px;
 }
-
 .rodape-conteudo p {
-    margin: 0;
-    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 
 .rodape-conteudo a img.github-icon {
