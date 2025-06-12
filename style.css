@@ -160,10 +160,17 @@ footer#rodape {
     }
 
     footer#rodape {
-  
-    text-align: center;
-    display: block; 
-    padding: 15px 10px;
+    background-color: #90c840;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;          /* Alinha texto centralizado */
+    display: flex;
+    align-items: center;
+    justify-content: center;     /* Centraliza horizontalmente */
+    gap: 10px;
 }
 
     .rodape-conteudo {
