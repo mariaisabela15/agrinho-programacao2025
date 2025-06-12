@@ -68,14 +68,14 @@ header.cabecalho h1.cabecalho-titulo {
 
 
 .prato-item .texto h1 {
-    color: #edeaea;
+    color: #000;
     margin-bottom: 10px;
     font-size: 28px;
 }
 
 
 .prato-item .texto p {
-    color: #edeaea;
+    color: #000;
     font-size: 16px;
 }
 
@@ -113,7 +113,7 @@ header.cabecalho h1.cabecalho-titulo {
     border-radius: 12px;
     padding: 15px 20px;
     margin-bottom: 20px;
-    color: #000;
+    color: #fffefe;
 }
 
 .localizacao-item h1 {
