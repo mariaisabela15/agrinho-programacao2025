@@ -1,3 +1,4 @@
+/* Reset e estilo geral */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,19 +6,21 @@ body {
     color: #000;
 }
 
-header {
+/* Cabeçalho */
+header.cabecalho {
     background-color: #90c840;
     padding: 20px;
     position: relative;
     text-align: center;
 }
 
-header h1 {
+header.cabecalho h1.cabecalho-titulo {
     color: #fff;
     font-size: 32px;
     margin: 0;
 }
 
+/* Lista de ícones no cabeçalho */
 .cabecalho-lista {
     list-style: none;
     margin: 0;
@@ -35,109 +38,136 @@ header h1 {
     cursor: pointer;
 }
 
+/* Seção principal */
+.pratos {
+    padding: 20px 10px;
+}
 
-
-/* Contêiner geral das seções dos pratos */
-.pratos > div {
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    margin-bottom: 40px;
+/* Cada prato (Barreado, Quirera, Pinhão) */
+.prato-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
     gap: 20px;
     text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Texto das seções */
-.pratos > div > div[class$="-texto"] {
+/* Texto e imagem dentro do prato */
+.prato-item .texto,
+.prato-item .imagem {
     flex: 1 1 300px;
     min-width: 280px;
 }
 
-.pratos > div > div[class$="-texto"] h1 {
+/* Título dos pratos */
+.prato-item .texto h1 {
+    color: #000;
+    margin-bottom: 10px;
     font-size: 28px;
-    margin-bottom: 15px;
-    color: #000;
 }
 
-.pratos > div > div[class$="-texto"] p {
+/* Parágrafo dos pratos */
+.prato-item .texto p {
+    color: #000;
     font-size: 16px;
-    color: #000;
 }
 
-/* Imagem das seções */
-.pratos > div > div[class$="-imagem"] {
-    flex: 1 1 300px;
-    min-width: 280px;
-}
-
-.pratos > div > div[class$="-imagem"] img {
+/* Imagem do prato ajustada para menor tamanho */
+.prato-item .imagem img {
+    max-width: 180px;
     width: 100%;
-    max-width: 320px;
-    height: auto;
     border-radius: 12px;
     display: block;
     margin: 0 auto;
 }
 
-/* Créditos das imagens */
+/* Crédito da imagem */
 .imagem-credito {
     font-size: 0.8em;
     color: #555;
-    text-align: center;
     margin-top: 6px;
 }
 
-
-/* Localização */
+/* Seção localização */
 .localizacao {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 900px;
+    margin: 40px auto 20px;
+    padding: 0 15px;
 }
 
 .localizacao h2 {
     text-align: center;
-    margin-bottom: 30px;
     color: #000;
-}
-
-/* Textos das localizações */
-.localizacao > section > div {
-    background-color: rgba(255,255,255,0.85);
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    padding: 15px 20px;
     margin-bottom: 25px;
-    text-align: center;
 }
 
-.localizacao > section > div h1 {
+.localizacao-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.localizacao-item h1 {
     font-size: 24px;
-    margin-bottom: 10px;
-    color: #000;
+    margin-bottom: 8px;
 }
 
-.localizacao > section > div p {
-    font-size: 16px;
-    color: #000;
-}
-footer {
-    text-align: center;
-    padding: 10px;
+/* Rodapé */
+footer#rodape {
+    background-color: #90c840;
     color: #fff;
     font-weight: bold;
-    background-color: #90c840;
+    padding: 15px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-footer img {
+.rodape-conteudo p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.rodape-conteudo a img.github-icon {
     width: 30px;
-    margin-top: 10px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 650px) {
+    .prato-item {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .prato-item .texto,
+    .prato-item .imagem {
+        min-width: 100%;
+    }
+
+    footer#rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape-conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
 }
